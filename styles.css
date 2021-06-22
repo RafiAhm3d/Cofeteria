@@ -9,7 +9,7 @@ box-sizing: border-box;
 :root{
     --slantedText: 'Grand Hotel', cursive;
     --primaryColor: #9a6e40;
-    --secondaryColor: ;
+    --secondaryColor: #653d21;
     --mainDark: #3a3e3b;
     --mainWhite: #fff;
     --mainGrey: #e5e5e5;
@@ -92,46 +92,50 @@ color: var(--mainWhite);
 /* end header
 /* Animations */
 @keyframes show {
-0%{
-transform: scale(2);
-opacity: 0;
+    0%{
+        transform: scale(2);
+        opacity: 0;
 }
-100%{
-transform: scale(1);
-opacity: 1;
+    100%{
+        transform: scale(1);
+        opacity: 1;
 }
 }
 @keyframes slideFromRight {
-0%{
-transform: translateX(1000px);
+    0%{
+        transform: translateX(1000px);
 }
-50%{
-transform: translateX(-200px);
+    50%{
+        transform: translateX(-200px);
 }
-75%{
-transform: translateX(50x);
+    75%{
+        transform: translateX(50x);
 }
-100%{
-transform: translateX(0px);
-opacity: 1;
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
 }
 }
 @keyframes slideFromLeft {
-0%{
-transform: translateX(-1000px);
+    0%{
+        transform: translateX(-1000px);
 }
-50%{
-transform: translateX(200px);
+    50%{
+        transform: translateX(200px);
 }
-75%{
-transform: translateX(-50x);
+    75%{
+        transform: translateX(-50x);
 }
-100%{
-transform: translateX(0px);
-opacity: 1;
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
 }
 }
-
 /* End of Animations */
-
+/* Content divider */
+.content-divider{
+    height: 0.5rem;
+    background: linear-gradient(to left,var(--primaryColor), var(--secondaryColor), var(--primaryColor));
+}
+/* End of Content divider */
 
