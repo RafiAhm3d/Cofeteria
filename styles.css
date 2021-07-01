@@ -8,7 +8,7 @@ box-sizing: border-box;
 
 :root{
     --slantedText: 'Grand Hotel', cursive;
-    --primaryColor: #9a6e40;
+    --primaryColor: #a77847;
     --secondaryColor: #653d21;
     --mainDark: #3a3e3b;
     --mainWhite: #fff;
@@ -35,6 +35,11 @@ a{
 .text-primary{
     color: var(--primaryColor);
 }
+/* Clearfix */
+.clearfix::after,.clearfix::before{ content:'';
+clear: both;
+display: table;
+} 
 /* Globals
 /* nav bar
 /* header */
@@ -139,3 +144,52 @@ color: var(--mainWhite);
 }
 /* End of Content divider */
 
+/* Specialties */
+.specialties{
+    background: var(--mainGrey);
+}
+.specialty{
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: var(--mainTransition);
+}
+.specialty-icon{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: var(--mainTransition);
+    display: inline-block;
+}
+.specialty-title{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    margin-bottom: 1.5rem;
+    color: var(--primaryColor);
+    transition: var(--mainTransition);
+
+}
+.specialty-text{
+    max-width: 13rem;
+    margin: 0 auto;
+}
+.specialty:hover{
+    background: var(--primaryColor);
+}
+.specialty:hover .specialty-title{
+    color: var(--mainWhite);
+}
+.specialty:hover .specialty-icon{
+    transform: translateY(-5px);
+}
+@media screen and (min-width:576px){
+    .specialty{
+        float: left;
+        width:50%;
+    }
+}
+@media screen and (min-width:1200px){
+    .specialty{
+        width: 25%;
+    }
+}
