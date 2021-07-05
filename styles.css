@@ -317,25 +317,25 @@ a {
 }
 /* end of products */
 
-/* Contact */
-.contact{
+/* contact */
+.contact {
   padding-top: 2rem;
 }
-.contact-item{
+.contact-item {
   margin-bottom: 3rem;
 }
-.contact-title{
-  font-family: var(--slantedText);
+.contact-title {
   color: var(--primaryColor);
+  font-family: var(--slantedText);
   text-transform: uppercase;
-  letter-spacing: var(--letterSpacing);
-  font-size: 1.6 rem;
+  letter-spacing: calc(var(--letterSpacing) * 2);
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-.contact-text{
+.contact-text {
   text-transform: uppercase;
 }
-.form-control{
+.form-control {
   display: block;
   width: 100%;
   border: none;
@@ -346,19 +346,20 @@ a {
   font-size: 0.85rem;
   font-weight: bold;
 }
-.form-control::placeholder{
+.form-control::placeholder {
   color: var(--primaryColor);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing);
 }
-@media screen and (min-width:992px){
-  .contact-info,.contact-form{
+@media screen and (min-width: 992px) {
+  .contact-info,
+  .contact-form {
     float: left;
     width: 50%;
     padding: 0 1rem;
   }
-    .contact-info{
-      padding-top: 5rem;
-    }
+  .contact-info {
+    padding-top: 5rem;
+  }
 }
-/* End of Contact */
+/* end of contact */
